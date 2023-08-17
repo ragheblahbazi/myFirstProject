@@ -1,0 +1,41 @@
+
+<div *ngIf="statut1">  <h1>   WELCOME   </h1></div>
+<p>register works!</p>
+<button type="button" (click)="retourverUser()"> retour user </button>
+<div class="row">
+<table class="table">
+<tr>
+ <th>Name <i class="fa-solid fa-user"></i> </th>
+ <th>code</th>
+ <th> contry</th>
+</tr>
+
+<tr *ngFor="let item of listVlaue" >
+<td>
+    <div>{{item.name}} </div>
+
+</td>
+<td>
+    <div>{{item.age}}</div>
+
+</td>
+<td>
+    <div>{{item.pay}}</div>
+
+</td>
+
+<td>
+   
+
+    <i class="fa fa-fast-forward" aria-hidden="true"></i>
+
+ 
+</td>
+
+</tr>
+
+
+
+</table>
+
+</div>

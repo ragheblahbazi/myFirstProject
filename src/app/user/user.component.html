@@ -1,0 +1,43 @@
+<h1 style="text-align: center;">Welcome to my new user</h1>
+<p>  bonjour {{name}} </p>
+<p>  mon pay est  {{pay}}</p>
+<p> mon pay est  {{getStatut()}} </p>
+
+<button type="button" (click)="affichemessage()"> SAVE </button>
+<button type="button" (click)="gotoresister()" >vers register </button>
+<form>
+
+    <input type="text" >
+   
+
+</form>
+
+<table class="table">
+    <tr>
+     <th>id  </th>
+     <th>name</th>
+     <th>username</th>
+     <th>email</th>
+    </tr>
+    
+    <tr *ngFor="let item of userList" >
+    
+    <td>
+        <div>{{item.id}} </div>
+    
+    </td>
+    <td>
+        <div>{{item.name}}</div>
+    
+    </td>
+    <td>
+        <div>{{item.username}}</div>
+    
+    </td>
+    <td>
+        <div>{{item.email}}</div>
+    
+    </td>
+
+
+
